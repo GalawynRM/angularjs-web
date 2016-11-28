@@ -122,66 +122,6 @@
         };
     });
 
-    app.factory("YoutubeService", function ($q, $log, $http, ConfigService) {
-        var data = [], selected;
-        return {
-            loadData: function (conditions) {
-                var itemId = conditions, apiKey = ConfigService.googleApi,
-                    q = "https://www.googleapis.com/youtube/v3/videos?id=" + itemId + "&key=" + apiKey + "&fields=items(id(videoId),snippet)&part=snippet",
-                    defer = $q.defer();
-                $http.get(q)
-                    .success(function (data) {
-                        $log.debug(data);
-                        defer.resolve(data);
-                    })
-                    .error(function (data) {
-                        $log.error(data);
-                    });
-                return defer.promise;
-            },
-            search: function (conditions) {
-                var itemId = conditions, apiKey = ConfigService.googleApi,
-                    q = "https://www.googleapis.com/youtube/v3/search?q=" + itemId + "&key=" + apiKey + "&fields=items(id(videoId), snippet)&part=id,snippet&maxResults=50&order=viewCount&type=video&videoDuration=short",
-                    defer = $q.defer();
-                $http.get(q)
-                    .success(function (data) {
-                        $log.debug(data);
-                        defer.resolve(data);
-                    })
-                    .error(function (data) {
-                        $log.error(data);
-                    });
-                return defer.promise;
-            },
-            getData: function () {
-                return data;
-            },
-            setData: function (items) {
-                data = items;
-            },
-            selectData: function (item) {
-                selected = item;
-            },
-            selectedData: function () {
-                return selected;
-            },
-            addData: function (item) {
-                data.push(item);
-            },
-            saveData: function (items) {
-                var defer = $q.defer();
-                $http.post("", {cache : false, method: "set", data: items})
-                    .success(function (data) {
-                        $log.debug(data);
-                        defer.resolve(data);
-                    })
-                    .error(function (data) {
-                        $log.error(data);
-                    });
-                return defer.promise;
-            }
-        };
-    });
 
 }(window.angular, app));
 
