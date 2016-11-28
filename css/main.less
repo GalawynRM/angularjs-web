@@ -1,0 +1,43 @@
+@import "../bower_components/bootstrap/less/bootstrap.less";
+
+[ng-click], .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+@header-size:50px;
+
+body{
+    padding-top: @header-size;
+}
+
+section.view{
+    padding-top: 1em;
+}
+
+p.bg-primary,
+p.bg-success,
+p.bg-info,
+p.bg-warning,
+p.bg-danger{
+    padding: 1em;
+}
+
+.open{
+    .caret{
+        .rotate180;
+    }
+}
+
+.rotate270 {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.rotate180 {
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}

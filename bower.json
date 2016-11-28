@@ -1,0 +1,39 @@
+{
+  "name": "angularjs-web",
+  "homepage": "https://github.com/GalawynRM/angularjs-web",
+  "authors": [
+    "GalawynRM <roberto.maschio@gmail.com>"
+  ],
+  "description": "angularjs web scaffolding",
+  "main": "",
+  "keywords": [
+    "angularjs",
+    "bootstrap",
+    "scaffolding"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-bootstrap": "^2.3.0",
+    "angular-animate": "^1.5.9",
+    "angular-touch": "^1.5.9",
+    "angular-aria": "^1.5.9",
+    "angular-sanitize": "^1.5.9",
+    "angular-route": "^1.5.9",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "angular-i18n": "^1.5.9",
+    "angular-nojq": "*",
+    "angular-moment": "^1.0.0",
+    "angular-vertilize": "^1.0.1"
+  },
+  "resolutions": {
+    "angular": "1.5.9"
+  }
+}
