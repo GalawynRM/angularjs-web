@@ -122,7 +122,6 @@
         };
     });
 
-
 }(window.angular, app));
 
 

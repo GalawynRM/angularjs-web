@@ -11,7 +11,9 @@
         credits: "Galawyn &copy; 2016",
         version: "0.0.1",
         cache: vcache,
-        googleApi: ""
+        apiKeys: {
+            googleApi: ""
+        }
     };
 
     app.factory("ConfigService", function ($q, $log) {

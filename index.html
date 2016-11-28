@@ -9,8 +9,7 @@
     <!--<base href="/appdirectory">-->
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" sizes="57x57" href="./apple-touch-icon-57x57.png">
@@ -22,7 +21,6 @@
     <link rel="apple-touch-icon" sizes="152x152" href="./apple-touch-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon-180x180.png">
     <link rel="apple-touch-icon" sizes="167x167" href="./apple-touch-icon-167x167.png">
-
     <link rel="icon" type="image/png" sizes="192x192" href="./android-icon-192x192.png">
     <link rel="manifest" href="/manifest.json">
 
@@ -34,25 +32,19 @@
 
     <script src="./bower_components/angular/angular.min.js"></script>
     <script src="./bower_components/angular-nojq/angular-nojq.min.js"></script>
-
     <script src="./bower_components/angular-i18n/angular-locale_en.js"></script>
-
     <script src="./bower_components/angular-route/angular-route.min.js"></script>
     <script src="./bower_components/angular-sanitize/angular-sanitize.min.js"></script>
     <script src="./bower_components/angular-aria/angular-aria.min.js"></script>
     <script src="./bower_components/angular-touch/angular-touch.min.js"></script>
     <script src="./bower_components/angular-animate/angular-animate.min.js"></script>
-
-
     <script src="./bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
     <script src="./bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
-
     <script src="./bower_components/angular-vertilize/angular-vertilize.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-
     <script src="./bower_components/moment/min/moment.min.js"></script>
 
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>-->
+    <script src="https://cdn.jsdelivr.net/modernizr/3.3.1/modernizr.min.js"></script>
 
     <link rel="stylesheet" media="print, screen" href="./bower_components/font-awesome/css/font-awesome.min.css">
 
@@ -71,7 +63,6 @@
     <script src="./js/filters.js?v=code"></script>
 
     <link rel="stylesheet" media="print, screen" href="./css/main.css?v=code">
-
 
     <script>
 
@@ -118,8 +109,6 @@
         </div>
     </nav>
 
-
-
     <div class="container">
         <div class="page-content">
             <h1 class="sr-only sr-only-focusable">{{service}}</h1>
@@ -131,8 +120,6 @@
             <section class="view {{activetab}}" ng-view> </section>
         </div>
     </div>
-
-
 
     <footer class="footer" ng-include="'footer.html'">
     </footer>

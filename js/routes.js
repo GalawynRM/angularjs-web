@@ -3,13 +3,6 @@
     'use strict';
     app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
 
-        /*var today = new Date(),
-            year = today.getFullYear(),
-            month = today.getMonth() + 1,
-            day = today.getDate();
-
-        if (month < 10) { month = '0' + month; }
-        if (day < 10) { day = '0' + day; }*/
         $routeProvider
             .when('/', {
                 redirectTo: '/home'

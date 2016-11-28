@@ -46,12 +46,9 @@ var app = angular.module('app', ['ui.bootstrap', "ngRoute", "ngSanitize", "ngAri
 
         $scope.login = function () {
 
-
         };
 
-
         $scope.logout = function () {
-
 
         };
 
@@ -64,7 +61,6 @@ var app = angular.module('app', ['ui.bootstrap', "ngRoute", "ngSanitize", "ngAri
         };
 
         $scope.routeNewWindow = function (path) {
-
             $window.open(path, "_blank");
         };
 
