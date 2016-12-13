@@ -1,5 +1,5 @@
 /*globals angular, window, document, alert*/
-var app = angular.module('app', ['ui.bootstrap', "ngRoute", "ngSanitize", "ngAria", "ngAnimate", "ngTouch", "LocalStorageModule"]);
+var app = angular.module('app', ['ui.bootstrap', "ngRoute", "ngSanitize", "ngAria", "ngAnimate", "ngTouch"]);
 
 (function (angular) {
     'use strict';
